@@ -1,0 +1,66 @@
+#charts {
+    display: grid;
+    grid-row-gap: 32px;
+    overflow: hidden;
+}
+
+#chartDiv {
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#charts h1 {
+    font-size: 40px;
+    margin-top: 48px;
+}
+
+#charts .charts__monthPicker {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 4px;
+    justify-self: center;
+}
+
+#charts .charts__monthPicker__months {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    overflow: auto;
+    white-space: nowrap;
+    scrollbar-width: none;
+}
+
+#charts .charts__monthChartData {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+#charts .charts__monthChartData__item {
+    display: grid;
+    grid-row-gap: 8px;
+}
+
+#charts .charts__monthChartData__item span {
+    font-size: 20px;
+    color: #ccc;
+}
+
+#charts .charts__monthChartData__item b {
+    font-size: 24px;
+}
+
+#charts .charts__monthChartData__item--red {
+    color: var(--chart-red);
+}
+
+#charts .charts__monthChartData__item--blue {
+    color: var(--chart-blue);
+}
+
+@media (max-width: 768px) {
+    #charts h1 {
+        margin-top: 0;
+    }
+}

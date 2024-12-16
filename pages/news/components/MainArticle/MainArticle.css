@@ -1,0 +1,47 @@
+.mainArticle {
+    position: relative;
+    overflow: hidden;
+}
+
+.mainArticle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.mainArticle h2 {
+    position: absolute;
+    bottom: 80px;
+    left: 24px;
+    right: 24px;
+    color: #fff;
+    font-size: 32px;
+}
+
+.mainArticle .mainArticle__buttonsWrapper {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+@media (max-width: 768px) {
+    .mainArticle > img {
+        height: 300px;
+    }
+
+    .mainArticle h2 {
+        font-size: 20px;
+        bottom: 76px;
+    }
+
+    .mainArticle .mainArticle__buttonsWrapper {
+        position: static;
+        margin-top: 16px;
+        gap: 8px;
+    }
+}
